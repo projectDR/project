@@ -8,7 +8,7 @@
  */
 class DBWorking_class
 {
-    var $dbconnection, $query, $result;
+    private $dbconnection, $query, $result;
 
     function __construct($dbname, $password)
     {
@@ -33,6 +33,17 @@ class DBWorking_class
             array_push($arr,$line);
         }
         return $arr;
+    }
+
+    public function insert($query)
+    {
+        $this->query = $query;
+        pg_query($this->dbconnection, $this->query);
+    }
+
+    public static function test_msg()
+    {
+        return ("Congratulation you've got message from DBWorking_class");
     }
 }
 

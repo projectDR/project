@@ -10,6 +10,8 @@ insert into position (position_name, id_departments) values ('Программи
 
 insert into position (position_name, id_departments) values ('Начальник отдела бухгалтерии',2);
 insert into position (position_name, id_departments) values ('Бухгалтер',2);
+
+
 insert into position (position_name, id_departments) values ('Начальник отдела менеджмента',4);
 insert into position (position_name, id_departments) values ('менеджер',4);
 
@@ -27,10 +29,5 @@ insert into application_type (appl_type_name) values ('Проблемы в ра�
 insert into application_type (appl_type_name) values ('Проблемы с интернетом\отсутствие интернета');
 
 insert into application (client_fio, id_application_types, id_position, urgency, description) values ('Белов Дмитрий Павлович', 6, 1, 1, 'Памагити! Кампуктир сламанался!! Ничиго ни работат! Пишу с домофона!');
-insert into application (client_fio, id_application_types, id_position, urgency, description) values ('Бодрягин-Крамаренко-Белькович Радмир ибн Говнок Геннадьевич', 5, 2, 2, 'Своё! Винда - сос-посос! Пиханье с линуксом рулит');
 
-insert into application_status(status_name) values ('создана');    
-insert into application_status(status_name) values ('назначена');
-insert into application_status(status_name) values ('выполняется');
-insert into application_status(status_name) values ('выполнена');
-insert into application_status(status_name) values ('отменена');
+
