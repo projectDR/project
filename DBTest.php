@@ -1,5 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
+<button class="btn" type="button" onclick="myFunc()">Отправить заявку</button>
+
+<script>
+    function myFunc() {
+        alert('Nekita pedar');
+    }
+</script>
 <?php
 
 /*$dbconnection = pg_connect("host=localhost port=5432 dbname=project_bd user=postgres password=Root123")
@@ -73,7 +80,7 @@ echo " created ";
 $myarr = $temp->query('SELECT department_name FROM department');
 echo " array: ".$myarr[0].$myarr[1].$myarr[2]." query: ".$temp->query;*/
 
-include "applications_list.php";
+//include "applications_list.php";
 
 ?>
 </html>
